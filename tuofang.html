@@ -1,0 +1,43 @@
+<html>
+<!--拖放-->  <!--drag    drop-->
+<!--(1)对元素设置拖放属性（2）拖动什么（3）拖放到何处（4）放置-->
+    <head>
+        <style>
+            div{
+                width:100px;
+                height:100px;
+            	background-color:red;
+            }
+            
+        </style>
+    </head>
+    <body>
+       <div align="center"> <!--使div里的所有元素居中-->
+       
+       <div id="div1" ondrop="drop(event)"
+ondragover="allowDrop(event)"></div>
+<img id="drag1" src="006.jpg" draggable="true"
+ondragstart="drag(event)" width="336" height="69" />
+        </div>
+    </body>
+    <script>
+    <script type="text/javascript">
+function allowDrop(ev)
+{
+ev.preventDefault();
+}
+
+function drag(ev)
+{
+ev.dataTransfer.setData("Text",ev.target.id);
+}
+
+function drop(ev)
+{
+ev.preventDefault();
+var data=ev.dataTransfer.getData("Text");
+ev.target.appendChild(document.getElementById(data));
+}
+</script>
+    </script>
+</html>
