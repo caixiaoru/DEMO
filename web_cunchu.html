@@ -1,0 +1,81 @@
+<html>
+    <head>
+    	<meta charset="utf-8"/>
+    	<title>web存储</title>
+    	<style>
+    		.storage{border:5px dotted gray;}
+    		table tr td:first-child{text-align: right}
+    		
+    	</style>
+    </head>
+    <body>
+    	<!-- web storage开发一个简单的网站列表程序 -->
+    	<div class="storage">
+    		
+    		<table>
+    			<tr>
+    				<td>网站别名:</td>
+    				<td><input type="text" id="web_elsename"></td>
+    			</tr>
+    			<tr>
+    				<td>网站名:</td>
+    				<td><input type="text" id="web_name"></td>
+    			</tr>
+    			<tr>
+    				<td>网址:</td>
+    				<td><input type="text" id="web_url"></td>
+    			</tr>
+    			<tr>
+    				<td><button onclick="save()">添加</button></td>
+    				<td></td>
+    			</tr>
+    		</table><hr/>
+    		<label for="web_search">输入网站名称</label>
+    		<input type="text" id="web_search">
+    		<button type="button" onclick="search()">搜索</button>
+    		<br/>
+    		<p>搜索网站的网址是:<span id="web_result"></span></p>
+    	</div>
+        <script>
+        	// 检查浏览器是否支持localStorage,sessionStorage
+        	if(typeof(Storage)!="undefined"){
+        		console.log(typeof(Storage));  //function
+        		// 支持
+        		
+            // session也是如下
+        		// 保存数据：localStorage.setItem(key,value)
+        		localStorage.setItem("年龄",20);
+        		// 读取数据：localStorage.getItem(key)
+        		localStorage.getItem("年龄");
+        		console.log(localStorage.getItem("年龄"));  //20
+        		// 删除单个数据：localStorage.removeItem(key)
+        		// 删除所有数据：localStorage.clear()
+        		// 得到某个索引的key:localStorage.key(index)
+        		console.log(localStorage.key(0));  //年龄
+
+        	// web storage开发一个简单的网站列表程序
+        	  // 以下代码用于保存查找数据
+
+                 function save(){
+                 	var site=new Object;
+                 	site.url=document.getElementById("web_url").value;
+                 	site.name=document.getElementById("web_name").value;
+                 	site.elsename=document.getElementById("web_elsename").value;
+                 	var str=JSON.stringify(site);
+                 	localStorage.setItem(site.elsename,str);
+                 	alert("添加成功");
+                 }
+                 function search(){
+                 	var web_search=document.getElementById("web_search").value;
+                 	var str2=localStorage.getItem(web_search);
+                    var web_result=document.getElementById("web_result");
+                    var site2=JSON.parse(str2);
+                    web_result.innerHTML=web_search+"的网站名是："+site2.name+site2.url;
+                 }
+        	}
+        	else{
+        		// 不支持
+        	}
+        </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tab切换</title>
+    <style>
+        .tab{overflow: hidden}
+        .change_btn{float: left;margin-right:15px;background-color: #ececec;padding:10px 15px;cursor: pointer}
+        .change_active{background-color: #2fa0ec}
+        .tab_content{display: none;}
+        .tab_show{display: block}
+    </style>
+</head>
+<body>
+<!--切换标签-->
+<div class="tab">
+    <div class="change_btn change_active">标签一</div>
+    <div class="change_btn">标签二</div>
+    <div class="change_btn">标签三</div>
+</div>
+<!--标签内容-->
+<div class="">
+    <div class="tab_content tab_show ">
+        内容一
+    </div>
+    <div class="tab_content">
+        内容二
+    </div>
+    <div class="tab_content">
+       内容三
+    </div>
+
+</div>
+</body>
+<script>
+    //    var change_btn=document.getElementsByClassName("tab_show")[0];
+          document.getElementsByClassName("change_btn").onclick = function(){
+              console.log(111);
+          }
+</script>
+</html>

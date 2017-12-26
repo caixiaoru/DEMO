@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8"/>
+    	<title>canvas</title>
+    	<style>
+    		canvas{
+    			/*color:blue;*/
+    		}
+    	</style>
+    </head>
+    <body><img src="a.png" id="image1">
+    	<!-- canvas本身没有绘图能力，只是一个容器 -->
+    	<canvas id="myCanvas" width="600" height="600" style="border:1px solid #000000"></canvas>
+    	
+    </body>
+    <script>    	
+    	var c=document.getElementById("myCanvas");
+    	// 创建context对象
+    	var ctx=c.getContext("2d");
+//         // 画红色矩形
+//    	ctx.fillStyle="#ff0000";
+//    	ctx.fillRect(0,0,100,100);
+//
+//    	// 画一条斜线
+//    	  // 开始坐标
+//        ctx.moveTo(0,0);
+//          //结束坐标
+//        ctx.lineTo(600,600);
+//        ctx.stroke();
+//
+//        // 绘制圆形
+//        ctx.beginPath();
+//          // 150:圆心距离左侧；150：距离上方；50：半径；0：整圆
+//        ctx.arc(50,150,50,0,2*Math.PI);
+//        ctx.stroke();
+//
+//        // 文本
+//          // font定义字体；fillText(text,x,y)绘制实心文本；strokeText绘制空心文本
+//        ctx.font="30px Arial";
+//        ctx.fillText("你好",100,150);
+//        ctx.strokeText("你好",100,100);
+
+        // 渐变
+          // creatLinearGradient(x,y,x1,y1):创建线条渐变; createRadialGradient(x,y,x1,y1,r1):创建一个径向/圆渐变
+            // 创建一个线性渐变
+              // 创建渐变
+                // 四个参数是：渐变开始坐标，渐变结束坐标
+              var grd=ctx.createLinearGradient(300,0,0,300);
+              grd.addColorStop(0,"red");
+              grd.addColorStop(1,"white");
+              // 填充渐变
+              ctx.fillStyle=grd;
+              ctx.fillRect(200,200,300,300);
+
+//            // 创建圆渐变
+//              // 创建渐变
+//              var grd=ctx.createRadialGradient(300,50,5,300,100,50);
+//              grd.addColorStop(0,"red");
+//              grd.addColorStop(1,"white");
+//              // 填充渐变
+//              ctx.fillStyle=grd;
+//              ctx.fillRect(300,50,300,100);
+
+        // 图像（把一副图片放到画布上）
+        // var img=document.getElementById("image1");
+        // img.onload = function() {
+	       //  ctx.drawImage(img,10,10);
+        // } 
+    </script>
+</html>
