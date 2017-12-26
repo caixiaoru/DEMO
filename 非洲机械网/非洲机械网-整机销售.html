@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://www.w-ta.com/front/machineSellAction!queryforMachineSell -->
+<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base href="http://www.w-ta.com:80/">--><base href=".">
+    
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="keywords" content="非洲机械网、工程机械网、工程机械跨境电商平台、配件销售、整机销售、设备租赁、非洲机械进出口、非洲设备施工、重汽、陕汽、重卡、非洲挖掘机、推土机、装载机、平地机、压路机、破碎器、两头忙、小松配件、卡特配件">
+    <meta name="description" content="非洲机械网是中国和非洲之间迄今第一家工程机械的跨境电商平台。致力于打造工程机械市场，为国内整机、配件企业打开进入非洲新市场的通道；打破中、非机械传统贸易信息严重不对称的现状。整合各类产品，打造各国本地机械、配件交易中心。">
+    <title>非洲机械网-整机销售</title>
+
+    <link rel="shortcut icon" href="http://www.w-ta.com/ico/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./非洲机械网-整机销售_files/reset.css">
+    <link rel="stylesheet" href="./非洲机械网-整机销售_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./非洲机械网-整机销售_files/base.css">
+    <link rel="stylesheet" href="./非洲机械网-整机销售_files/machineSell.css">
+
+    <!--解决IE9以下版本不支持HTML5问题-->
+    <!--[if lt IE 9]>
+    <script src="js/libs/html5shiv.js"></script>
+    <![endif]-->
+    <!--解决IE7不支持font awesome问题-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <![endif]-->
+</head>
+<body>
+<!--header-->
+<header id="header">
+   
+
+<ul class="top_nav_l">
+		
+        <li><a href="http://www.w-ta.com/login.jsp">请登录</a> </li>
+        <li><a href="http://www.w-ta.com/register.jsp">免费注册</a> </li>
+        
+        
+    </ul>
+    <ul class="top_nav_r">
+        <li class="active"><a href="http://www.w-ta.com/index.jsp">非洲机械网首页</a> </li>
+        <li><a href="http://www.w-ta.com/Framer/shopProc.jsp">帮助中心</a> </li>
+        <li><a id="onlineService" target="_self" href="tencent://message/?uin=2862273214&amp;Site=2862273214&amp;Menu=yes">在线客服</a></li>
+        <li><a>服务热线 02169125256</a> </li>
+        <li class="lang">
+        <a href="http://www.w-ta.com/index.jsp">中文</a>
+        <a href="http://59.110.12.196:8080/wtamachinery">English</a> 
+        </li>
+    </ul>
+
+</header>
+<!--ad-->
+<div class="container top_banner"><a href="http://www.w-ta.com/front/shopInfoAction!home?shopNumber=20160831193051361759&amp;type=%E9%85%8D%E4%BB%B6" id="topUrl"><img id="topAd" src="./非洲机械网-整机销售_files/a63e388f-68d7-44be-8de4-70db316a71b6.jpg" alt="顶部广告"></a></div>
+
+<!--logo and search-->
+
+<div class="container search_wrap">
+    <a class="logo" href="http://www.w-ta.com/front/ordinaryUserAction!UserLogin"><img src="./非洲机械网-整机销售_files/logo.png" alt="非洲机械网"></a>
+    <div class="input_group">
+        <div class="input_group_dropdown">
+            <div class="dropdown_toggle" data-toggle="dropdown" data-target="searchSort">
+                <span class="dropdown_res" id="type">配件</span><i class="icon-caret-down"></i>
+            </div>
+            <ul class="dropdown_menu" id="searchSort">
+                <li>整机</li>
+                <li>配件</li>
+                <li>店铺</li>
+            </ul>
+        </div>
+        <input class="form_control" type="text" placeholder="请输入关键词，如“沃尔沃挖掘机”" id="keyword">
+        <span class="input_group_btn"><button type="button" onclick="search();">搜&nbsp;索</button></span>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<!--navbar-->
+<nav class="navbar">
+    <div class="container">
+        <div class="sidebar_header">
+            <a class="sidebar_title" href="http://www.w-ta.com/front/ordinaryUserAction!UserLogin">首页</a>
+            <button type="button" class="sidebar_toggle" data-toggle="collapse" data-target="topNav">
+                <span class="icon_bar"></span>
+                <span class="icon_bar"></span>
+                <span class="icon_bar"></span>
+            </button>
+        </div>
+        <ul class="navbar_nav" id="topNav">
+            <li><a href="http://www.w-ta.com/front/ordinaryUserAction!UserLogin">首页</a> </li>
+            <li class="active"><a href="http://www.w-ta.com/front/machineSellAction!queryforMachineSell">整机</a> </li>
+            <li><a href="http://www.w-ta.com/front/partsAction!partsPage">配件</a></li>
+            <li><a href="http://www.w-ta.com/front/frontGoodShopsAction!tofrontGoodShops">导购</a> </li>
+            <li><a href="http://www.w-ta.com/front/shopInfoAction!home?shopNumber=20161128172510202903">自营商城</a></li>
+            <li><a href="http://www.w-ta.com/front/machineLeaseAction!queryMachineLease">设备租赁</a> </li>
+            <li><a href="http://www.w-ta.com/bid/rBidAction!showAllGoneBid">招投标专区</a></li>
+			<!-- <li><a href="oversea/rSupplyAction!showAllSupply">海外供需</a></li> -->
+			<!--  <li><a href="oversea/rOverseaFinancingAction!showFinancing">海外融资</a></li>-->
+			<li><a href="http://www.w-ta.com/oversea/rSupplyAction!toAfricaProject">非洲项目</a> </li>
+			<li><a href="http://www.w-ta.com/oversea/rOverseaServicePointAction!showServicePoint">海外服务点</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!--轮播广告-->
+<div class="jumbotron">
+    <div class="banner_slide">
+        <div class="slide_content">
+            <div class="slide_list">
+                <a href="http://www.w-ta.com/front/shopInfoAction!home?shopNumber=20160831193051361759&amp;type=%E9%85%8D%E4%BB%B6"><img src="./非洲机械网-整机销售_files/1f0ce145-469e-4ab3-b23b-95e403a78dc1.jpg" alt="非洲机械网"></a>
+            </div>
+            <div class="slide_list on">
+                <a href="http://www.w-ta.com/front/shopInfoAction!home?shopNumber=20160831192618122272&amp;type=%E9%85%8D%E4%BB%B6"><img src="./非洲机械网-整机销售_files/2982a0aa-4d06-428b-ac04-3df4a898b98e.jpg" alt="非洲机械网"></a>
+            </div>
+            <div class="slide_list">
+                <a href="http://www.w-ta.com/front/shopInfoAction!home?shopNumber=20160831192027524853&amp;type=%E9%85%8D%E4%BB%B6"><img src="./非洲机械网-整机销售_files/a942f547-9188-49d1-a601-65f53f45a5f8.jpg" alt="非洲机械网"></a>
+            </div>
+            <div class="slide_list">
+                <a href="http://www.w-ta.com/front/shopInfoAction!home?shopNumber=20160831192151215722&amp;type=%E9%85%8D%E4%BB%B6"><img src="./非洲机械网-整机销售_files/9f04ee38-fb7b-4fc4-8b62-9d47b41157d4.png" alt="非洲机械网"></a>
+            </div>
+        </div>
+        <ul class="slide_nav">
+            <li class=""></li>
+            <li class="on"></li>
+            <li class=""></li>
+            <li class=""></li>
+        </ul>
+    </div>
+</div>
+
+<!--机种-->
+<div class="jumbotron">
+    <div class="container">
+        <div class="carousel" data-flag="5" data-show="3" >
+            <a class="carousel_control left" href="javascript:;" data-slide="carousel_up"><i class="icon-chevron-left"></i> </a>
+            <div class="carousel_inner">
+                <div class="carousel_wrap">
+
+                    <ul class="carousel_list" style="left: -1850px;">
+                        <li>
+                            <div class="img_con">
+                                <a href="http://www.w-ta.com/front/marketMachineAction!queryMarketMachine?machine_num=101&amp;machine_Name=%E6%8C%96%E6%8E%98%E6%9C%BA">
+                                    <img src="./非洲机械网-整机销售_files/7e447938-a56e-4c12-96b9-0c4a3a322245.jpg">
+                                </a>
+                            </div>
+                            <a href="http://www.w-ta.com/front/marketMachineAction!queryMarketMachine?machine_num=101&amp;machine_Name=%E6%8C%96%E6%8E%98%E6%9C%BA" target="_blank">挖掘机</a>
+                        </li>
+                        
+                        <li>
+                            <div class="img_con"><a href="http://www.w-ta.com/front/marketMachineAction!queryMarketMachine?machine_num=102&amp;machine_Name=%E8%A3%85%E8%BD%BD%E6%9C%BA"><img src="./非洲机械网-整机销售_files/9bb156f7-0bf5-41a0-abb7-9799bed8abed.jpg"></a>  </div>
+                            <a href="http://www.w-ta.com/front/marketMachineAction!queryMarketMachine?machine_num=102&amp;machine_Name=%E8%A3%85%E8%BD%BD%E6%9C%BA" target="_blank">装载机</a>
+                        </li>
+                        
+                        <li>
+                            <div class="img_con"><a href="http://www.w-ta.com/front/marketMachineAction!queryMarketMachine?machine_num=103&amp;machine_Name=%E6%8E%A8%E5%9C%9F%E6%9C%BA"><img src="./非洲机械网-整机销售_files/2fde9ef9-9c45-4824-8c7a-dce771cbc7df.jpg"></a>  </div>
+                            <a href="http://www.w-ta.com/front/marketMachineAction!queryMarketMachine?machine_num=103&amp;machine_Name=%E6%8E%A8%E5%9C%9F%E6%9C%BA" target="_blank">推土机</a>
+                        </li>
+                        
+                        <li>
+                            <div class="img_con"><a href="http://www.w-ta.com/front/marketMachineAction!queryMarketMachine?machine_num=104&amp;machine_Name=%E5%B9%B3%E5%9C%B0%E6%9C%BA"><img src="./非洲机械网-整机销售_files/394e8cd9-f282-410e-b83a-76a711cdaa2b.jpg"></a>  </div>
+                            <a href="http://www.w-ta.com/front/marketMachineAction!queryMarketMachine?machine_num=104&amp;machine_Name=%E5%B9%B3%E5%9C%B0%E6%9C%BA" target="_blank">平地机</a>
+                        </li>
+                        
+                        <li>
+                            <div class="img_con"><a href="http://www.w-ta.com/front/marketMachineAction!queryMarketMachine?machine_num=105&amp;machine_Name=%E5%8E%8B%E8%B7%AF%E6%9C%BA"><img src="./非洲机械网-整机销售_files/fea209ae-3e42-4e67-9812-54e2a409d543.jpg"></a>  </div>
+                            <a href="http://www.w-ta.com/front/marketMachineAction!queryMarketMachine?machine_num=105&amp;machine_Name=%E5%8E%8B%E8%B7%AF%E6%9C%BA" target="_blank">压路机</a>
+                        </li>
+                        
+                        <li>
+                            <div class="img_con"><a href="http://www.w-ta.com/front/marketMachineAction!queryMarketMachine?machine_num=106&amp;machine_Name=%E8%B5%B7%E9%87%8D%E6%9C%BA"><img src="./非洲机械网-整机销售_files/37a24531-f113-4ebc-a695-f6455253dd44.jpg"></a>  </div>
+                            <a href="http://www.w-ta.com/front/marketMachineAction!queryMarketMachine?machine_num=106&amp;machine_Name=%E8%B5%B7%E9%87%8D%E6%9C%BA" target="_blank">起重机</a>
+                        </li>
+                        
+                        <li>
+                            <div class="img_con"><a href="http://www.w-ta.com/front/marketMachineAction!queryMarketMachine?machine_num=107&amp;machine_Name=%E7%A0%B4%E7%A2%8E%E5%99%A8"><img src="./非洲机械网-整机销售_files/d13f752f-6aa4-4ccc-8c4e-198a7e758890.jpg"></a>  </div>
+                            <a href="http://www.w-ta.com/front/marketMachineAction!queryMarketMachine?machine_num=107&amp;machine_Name=%E7%A0%B4%E7%A2%8E%E5%99%A8" target="_blank">破碎器</a>
+                        </li>
+                        
+                        <li>
+                            <div class="img_con"><a href="http://www.w-ta.com/front/marketMachineAction!queryMarketMachine?machine_num=108&amp;machine_Name=%E5%85%B6%E4%BB%96"><img src="./非洲机械网-整机销售_files/331c4554-8106-4f54-b9a8-4f0282bd4156.jpg"></a>  </div>
+                            <a href="http://www.w-ta.com/front/marketMachineAction!queryMarketMachine?machine_num=108&amp;machine_Name=%E5%85%B6%E4%BB%96" target="_blank">其他</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <a class="carousel_control right" href="javascript:;" data-slide="carousel_down"><i class="icon-chevron-right"></i> </a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <!-- 为您推荐-->
+    <div class="floor_name">为您推荐</div>
+    <div class="list_group recom_group">
+        
+        <div class="list_group_item">
+            <a class="img_wrap" href="http://www.w-ta.com/front/machineSellAction!queryMachineDetail?machineNumber=2016102014550852708"> <img src="./非洲机械网-整机销售_files/1e3a6e31-3804-4ac0-bd87-a9e5be55c33f.jpg"></a>
+            <div class="txt_wrap">
+                <div class="item_title">深松款激光平地机</div>
+                <div class="item_con">价格：￥78800.0
+
+品牌：其他
+
+型号：12pjz
+
+功率：150ps
+
+发动机型号：120hp
+</div>
+                <a class="btn btn_default" href="http://www.w-ta.com/front/machineSellAction!queryMachineDetail?machineNumber=2016102014550852708">了解详情</a>
+                <span class="caret_left"></span>
+            </div>
+        </div>
+        
+        <div class="list_group_item">
+            <a class="img_wrap" href="http://www.w-ta.com/front/machineSellAction!queryMachineDetail?machineNumber=20161020145816596148"> <img src="./非洲机械网-整机销售_files/f64d1086-e5ab-435a-a2e2-fedbf16bb2ff.jpg"></a>
+            <div class="txt_wrap">
+                <div class="item_title">自平衡系统激光平地机</div>
+                <div class="item_con">价格：￥78800.0
+品牌：其他
+型号：12pjz
+功率：150ps
+发动机型号：120hp</div>
+                <a class="btn btn_default" href="http://www.w-ta.com/front/machineSellAction!queryMachineDetail?machineNumber=20161020145816596148">了解详情</a>
+                <span class="caret_left"></span>
+            </div>
+        </div>
+        
+        <div class="list_group_item">
+            <a class="img_wrap" href="http://www.w-ta.com/front/machineSellAction!queryMachineDetail?machineNumber=20161020120030240215"> <img src="./非洲机械网-整机销售_files/74bbc6c1-f777-45c2-af38-c19a9fe5d1ac.jpg"></a>
+            <div class="txt_wrap">
+                <div class="item_title">小型挖掘机</div>
+                <div class="item_con">功率：8.6kw150ps
+铲斗容量：0.022m3
+工作重量：760KGkg</div>
+                <a class="btn btn_default" href="http://www.w-ta.com/front/machineSellAction!queryMachineDetail?machineNumber=20161020120030240215">了解详情</a>
+                <span class="caret_left"></span>
+            </div>
+        </div>
+        
+        <div class="list_group_item">
+            <a class="img_wrap" href="http://www.w-ta.com/front/machineSellAction!queryMachineDetail?machineNumber=20161017141519768453"> <img src="./非洲机械网-整机销售_files/3250f755-88ac-4f47-8612-cab7b63df49d.jpg"></a>
+            <div class="txt_wrap">
+                <div class="item_title">纯电动低高度柱式E系列</div>
+                <div class="item_con">功率：无kw150ps
+总质量：750 kg
+发动机型号：无
+铲斗容量：无m3
+工作重量：0.227kg</div>
+                <a class="btn btn_default" href="http://www.w-ta.com/front/machineSellAction!queryMachineDetail?machineNumber=20161017141519768453">了解详情</a>
+                <span class="caret_left"></span>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <!-- 工程案例-->
+    <div class="floor_name">工程案例</div>
+    <div class="list_group case_group">
+       
+        <div class="list_group_item">
+            <a class="img_wrap" href="http://www.w-ta.com/front/machineSellAction!queryProjectDetail?projectCaseid=1">
+                <img src="./非洲机械网-整机销售_files/bb1a7d70-727e-46bd-8d25-eae9cf27b4e6.png" class="case_pic">
+                <span class="item_title">乌干达MN项目</span>
+            </a>
+        </div>
+        
+        <div class="list_group_item">
+            <a class="img_wrap" href="http://www.w-ta.com/front/machineSellAction!queryProjectDetail?projectCaseid=2">
+                <img src="./非洲机械网-整机销售_files/56989124-7eaf-44d4-81af-0e36316a44b6.png" class="case_pic">
+                <span class="item_title">恩德培机场改扩建项目</span>
+            </a>
+        </div>
+        
+        <div class="list_group_item">
+            <a class="img_wrap" href="http://www.w-ta.com/front/machineSellAction!queryProjectDetail?projectCaseid=3">
+                <img src="./非洲机械网-整机销售_files/e30c5f44-97a8-4af4-b5c9-226f1264c058.png" class="case_pic">
+                <span class="item_title">乌干达国际机场高速路项目</span>
+            </a>
+        </div>
+        
+        <div class="list_group_item">
+            <a class="img_wrap" href="http://www.w-ta.com/front/machineSellAction!queryProjectDetail?projectCaseid=4">
+                <img src="./非洲机械网-整机销售_files/6ce40606-e299-4ef1-a529-4e4a9336018f.png" class="case_pic">
+                <span class="item_title">乌干达NK道路升级项目</span>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+<!--footer-->
+<footer id="footer" class="container">
+   
+<div class="footer_desc">
+        <div class="logo"><a href="http://www.w-ta.com/index.jsp"><img src="./非洲机械网-整机销售_files/logo.png" alt="公司logo"></a><span>诚信保障</span> </div>
+        <dl>
+            <dt>新手指南</dt>
+            <dd>
+                <a href="http://www.w-ta.com/Framer/consumptionSecu.jsp" target="_blank">消费保障</a>
+                <a href="http://www.w-ta.com/Framer/shopProc.jsp" target="_blank">购物流程</a>
+                <a href="http://www.w-ta.com/Framer/vipRegi.jsp" target="_blank">会员注册</a>
+                <a href="http://www.w-ta.com/Framer/orderClause.jsp" target="_blank">预约服务条款</a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>会员服务</dt>
+            <dd>
+                <a href="http://www.w-ta.com/Framer/vipClause.jsp" target="_blank">会员服务条款</a>
+                <a href="http://www.w-ta.com/Framer/complainFlow.jsp" target="_blank">会员投诉流程</a>
+                <a href="http://www.w-ta.com/Framer/brandAuth.jsp" target="_blank">关于品牌认证</a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>商家服务</dt>
+            <dd>
+                <a href="http://www.w-ta.com/Framer/shopProblem.jsp" target="_blank">商家常见问题</a>
+                <a href="http://www.w-ta.com/Framer/shopManage.jsp" target="_blank">商家店铺管理</a>
+                <a href="http://www.w-ta.com/Framer/shopFitment.jsp" target="_blank">商家店铺装修</a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>合作通道</dt>
+            <dd>
+                <a href="http://www.w-ta.com/Framer/merchantSettled.jsp" target="_blank">商家入驻</a>
+                <a href="http://www.w-ta.com/Framer/cooperation.jsp" target="_blank">商务合作</a>
+            </dd>
+        </dl>
+        <dl class="mobile">
+            <dt>关注我们</dt>
+            <dd><img src="./非洲机械网-整机销售_files/code.png" alt="二维码"></dd>
+        </dl>
+    </div>
+    <div class="clear col-md-3 col-xs-5"></div>
+    <div class="footer_copyright col-md-9  col-xs-5">
+        <a href="http://www.w-ta.com/Framer/companyCulture.jsp" target="_blank">关于我们</a>
+        <a href="http://www.w-ta.com/Framer/contactUs.jsp" target="_blank">联系我们</a>
+        <a href="http://www.w-ta.com/Framer/recruitment.jsp" target="_blank">招贤纳士</a>
+        <a href="http://www.w-ta.com/shoplogin" target="_blank">客户登录</a>
+        <a href="http://www.w-ta.com/adminAction" target="_blank">系统登录</a>
+        <a href="http://www.w-ta.com/Framer/merchantSettled.jsp" target="_blank">申请店铺</a>
+        <a href="http://www.w-ta.com/Framer/disclaimer.jsp" target="_blank">免责声明</a>
+        <a href="http://www.w-ta.com/Framer/copyrightNotice.jsp" target="_blank">内容版权声明</a>
+        <a href="http://www.w-ta.com/Framer/privacyProtection.jsp" target="_blank">隐私保护</a>
+        <p>非洲机械网版权所有&nbsp;Copyright&nbsp;©&nbsp;2016&nbsp;&nbsp;沪ICP备16050473-1</p>
+
+    </div>
+</footer>
+
+<!--theme-->
+<script src="./非洲机械网-整机销售_files/jquery-1.8.3.min.js"></script>
+<script src="./非洲机械网-整机销售_files/jquery-placeholder.js"></script>
+<script src="./非洲机械网-整机销售_files/common.js"></script>
+<script src="./非洲机械网-整机销售_files/index.js"></script>
+<script src="./非洲机械网-整机销售_files/online.js"></script>
+<script src="./非洲机械网-整机销售_files/search.js"></script>
+<script type="text/javascript">
+/*获取头部广告及在线咨询  */
+    $(function (){
+    	getctx('http://www.w-ta.com:80/');
+    });
+</script>
+
+</body></html>

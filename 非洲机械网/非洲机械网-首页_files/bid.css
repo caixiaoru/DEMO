@@ -1,0 +1,392 @@
+/*鎷涙姇鏍囦笓鍖�*/
+@media (max-width: 768px){
+    .bid_wrap{
+        padding: 0 5px;
+    }
+}
+.more_bid{
+    color:#555;
+}
+.more_bid:hover{
+    color: #ff4a00;
+}
+.top_banner img{
+    width:100%;
+    height: auto;
+}
+.container_r .ad_right{
+    margin-top: 22px;
+}
+.ad_right img{
+    width: 100%;
+}
+.ad_right .img_wrap+.img_wrap{
+    margin-top: 10px;
+}
+a.bid_tit{
+    color: #555;
+}
+a.bid_tit:hover{
+    color: #ff4a00;
+}
+.panel{
+    border: 1px solid #ccc;
+}
+.panel .title{
+    line-height: 20px;
+    border-bottom: 1px solid #ccc;
+    background:#fafafa;
+    padding:10px 15px;
+    color: #555;
+    *overflow:hidden;
+}
+.panel .bid_name{
+    font-size: 14px;
+    *float: left;
+}
+.panel .bid_time{
+    color: #777;
+    float: right;
+}
+.bid_con{
+    line-height: 20px;
+    padding: 37px 88px 16px;
+}
+.bid_det{
+    margin-bottom: 27px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.bid_annex h6{
+    font-weight: 400;
+    color: #555;
+}
+.annex_list a{
+    color: #005bc2;
+}
+.annex_list a:hover{
+    font-weight: 800;
+}
+.table{
+    font-size: 14px;
+}
+.africa-project{
+    margin: 25px 0;
+}
+.africa-project .table th:first-child{
+    width: 68%;
+}
+.africa-project .table th:nth-child(2){
+    width: 32%;
+}
+.bid_wrap .table th:first-child{
+    width: 85%;
+}
+.bid_wrap .table th:nth-child(2){
+    width: 9%;
+}
+
+@media (max-width: 768px){
+    .panel{
+        min-width: 300px;
+        margin: 0 10px;
+    }
+    .bid_con{
+        padding: 20px 15px 10px;
+    }
+    .panel .title{
+        padding: 5px 10px;
+        line-height: 18px;
+    }
+    .panel .bid_time{
+        float: none;
+        display: block;
+    }
+    .africa-project{
+        margin: 10px 0;
+    }
+    .africa-project.table_responsive>.table>tbody>tr>td {
+        padding: 9px 5px;
+    }
+}
+
+/*娴峰渚涢渶*/
+.supply_left{
+    width: 822px;
+    float: left;
+}
+.main_del{
+    border:1px solid #ccc;
+    margin-top: 30px;
+}
+.tab_bar{
+    background: #f7f7f7;
+    position: relative;
+}
+.tab_list{
+    height: 48px;
+    border-bottom: 1px solid #ccc;
+}
+.tab_list li{
+    float: left;
+}
+.tab_list li a{
+    display: block;
+    padding: 0 24px;
+    font-size: 18px;
+    line-height: 48px;
+    color: #333;
+}
+.tab_list li a:hover{
+    color: #ff500b;
+}
+.tab_list .tab_active{
+    margin:-1px -1px 0;
+}
+.tab_list .tab_active a{
+    border-top: 2px solid #ff500b;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background: #fff;
+    line-height: 47px;
+    *line-height: 48px;
+}
+.tab_con{
+    padding:0 20px 30px;
+}
+.supply_left .btn_primary{
+    display: block;
+    margin: 30px auto 20px;
+    width: 85px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0;
+}
+.supply_left .tab_bar .more{
+    position: absolute;
+    right: 10px;
+    top:0;
+    line-height: 48px;
+    font-size: 14px;
+    color: #555;
+}
+.tab_only{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 48px;
+    padding-left: 10px;
+}
+.supply_left .tab_bar .more:hover{
+    color: #ff4a00;
+}
+.supply_left ol{
+    list-style: decimal inside;
+}
+.supply_left ol>li{
+    padding: 16px 15px 16px 25px;
+    border-bottom:1px dotted #ddd;
+}
+.supply_left ol>li>a{
+    color: #555;
+    line-height: 20px;
+}
+.supply_left ol>li>a:hover{
+    color: #ff4a00;
+}
+.supply_right{
+    width: 350px;
+    float: right;
+    margin-top: 30px;
+}
+.supply_right .ad_list{
+    max-height: 234px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.supply_right .ad_list img{
+    display: block;
+    width: 100%;
+}
+@media screen and (max-width: 768px){
+    .supply_left{
+        width: 100%;
+    }
+    .main_del{
+        margin: 15px 5px;
+    }
+    .tab_con{
+        padding: 0 15px 15px;
+    }
+    .supply_left ol>li{
+        padding:7px 9px;
+    }
+    .supply_left .btn_primary{
+        margin: 15px auto 0;
+    }
+    .supply_right{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .supply_right .ad_list{
+        float: left;
+        width: 33.33%;
+        padding: 0 5px;
+    }
+}
+/*鎴戣涔�*/
+.panel .buy_name{
+    font-size: 16px;
+    font-weight: 700;
+}
+.form_wrap{
+    padding: 30px 0 25px;
+}
+.form_wrap .form_group{
+    font-size: 14px;
+}
+.form_wrap .form_group label{
+    width: 130px;
+    color: #555;
+}
+.form_wrap .form_control{
+    width: 260px;
+}
+.form_wrap textarea.form_control{
+    width: auto;
+}
+.form_wrap .btn_primary{
+    padding: 6px 28px;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+    margin-left: 135px;
+}
+@media (max-width: 768px){
+    .form_wrap{
+        padding: 20px 10px 10px;
+    }
+}
+
+/*娴峰渚涢渶璇︽儏椤�*/
+.header{
+    font-size: 14px;
+    color: #555;
+    padding: 10px 15px;
+    line-height: 24px;
+    background: #ebebeb;
+}
+.box{
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    min-height: 190px;
+    position: relative;
+}
+.box_l{
+    background: #f7f7f7;
+    text-align: center;
+    width: 227px;
+    *width: 226px;
+    border-right: 1px solid #ccc;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+}
+.user_avatar{
+    margin: 20px auto 15px;
+    width: 115px;
+    padding: 1px;
+    border: 1px solid #ccc;
+}
+.user_avatar img{
+    display: block;
+    width: 100%;
+}
+.user_name{
+    line-height: 20px;
+    color: #333;
+    padding: 0 10px;
+}
+.box_r{
+    padding-left: 227px;
+    color: #555;
+    line-height: 20px;
+}
+.box_r_h{
+    border-bottom: 1px solid #ccc;
+    padding: 4px 14px;
+}
+.box_r_contain{
+    padding: 20px 15px;
+    overflow: hidden;
+}
+.box_r_contain .btn_default{
+    color: #666;
+    padding: 5px 13px;
+    float: right;
+    margin-top:30px;
+    background: #fff;
+}
+.box_r_contain .btn_default:hover,
+.box_r_contain .btn_default:focus{
+    border-color: #ff4a00;
+    color: #ff4a00;
+}
+@media (max-width: 768px){
+    .box_l{
+        width: 100px;
+    }
+    .user_avatar{
+        margin: 10px auto 5px;
+        width: 90%;
+    }
+    .box_r{
+        padding-left: 100px;
+    }
+    .box_r_contain{
+        padding: 10px;
+    }
+}
+
+/*鍥炲妯℃�佹*/
+.modal_dialog{
+    width: 566px;
+}
+#reply .modal_form{
+    border: none;
+    padding: 0;
+}
+#reply textarea.form_control{
+    width: 100%;
+    *width: 90%;
+    height: 252px;
+    padding: 20px;
+}
+#reply .btn{
+    padding: 9px 28px;
+    margin-left: 0;
+}
+
+/*2017-10-18淇敼娴峰渚涢渶涓洪潪娲查」鐩�*/
+.africa-project-det{
+    padding: 10px 20px 20px 20px;
+}
+.africa-project-det .headline{
+    font-size: 20px;
+    color: #222;
+    text-align: center;
+    line-height: 38px;
+}
+.africa-project-det .time{
+    font-size: 15px;
+    color: #666;
+    text-align: center;
+    line-height: 28px;
+    padding: 10px 0;
+}
+.africa-project-det .con{
+    font-size: 16px;
+    color: #444;
+    line-height: 30px;
+    text-indent: 2em;
+    padding: 7px 0;
+}
