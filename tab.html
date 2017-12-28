@@ -7,8 +7,8 @@
         .tab{overflow: hidden}
         .change_btn{float: left;margin-right:15px;background-color: #ececec;padding:10px 15px;cursor: pointer}
         .change_active{background-color: #2fa0ec}
-        .tab_content{display: none;}
-        .tab_show{display: block}
+        .tab_content>div{display: none;}
+        .tab_show{display: block !important;}
     </style>
 </head>
 <body>
@@ -19,23 +19,27 @@
     <div class="change_btn">标签三</div>
 </div>
 <!--标签内容-->
-<div class="">
-    <div class="tab_content tab_show ">
+<div class="tab_content">
+    <div class="tab_show ">
         内容一
     </div>
-    <div class="tab_content">
+    <div class="">
         内容二
     </div>
-    <div class="tab_content">
+    <div class="">
        内容三
     </div>
-
 </div>
 </body>
+<script src="DOM节点/jquery-3.1.1.min.js"></script>
 <script>
-    //    var change_btn=document.getElementsByClassName("tab_show")[0];
-          document.getElementsByClassName("change_btn").onclick = function(){
-              console.log(111);
-          }
+     $(".tab>div").click(function(){
+         $(this).addClass("change_active").siblings().removeClass("change_active");
+         $('.tab_content>div').eq($(this).index()).addClass("tab_show").siblings().removeClass("tab_show");
+     })
+
+
+
+
 </script>
 </html>
