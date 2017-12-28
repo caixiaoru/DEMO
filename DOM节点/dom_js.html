@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM节点_js</title>
+</head>
+<body>
+<div>
+   <ul class="list">
+       <li class="list_a">第一个li</li>
+       <li class="list_b">第二个li</li>
+       <li>第三个li</li>
+       <li>第四个li</li>
+       <li>第五个li</li>
+   </ul>
+</div>
+</body>
+<script>
+    var list = document.getElementsByClassName("list")[0];
+    console.log(list);
+//    获取子节点
+    var list_ch_1 = list.childNodes;   //获取空白节点  文本节点  html节点
+    console.log(list_ch_1);
+
+    var list_ch_2 = list.children;              //获取html节点
+    console.log(list_ch_2);
+
+    //   获取某一个子节点
+        var list_ch_a_1 = list_ch_1[1];
+        console.log(list_ch_a_1);
+
+        var list_ch_a_2 = list_ch_2[0];
+        console.log(list_ch_a_2);
+
+    //  获取子节点的子节点
+    //  parentObj.firstChild.firstChild.firstChild...的形式，如此就可以获得更深层次的节点。
+        var list_one = list_ch_a_2.firstChild;   //firstChild与childNodes 用法一致
+        console.log(list_one);
+
+console.log("............................................................");
+
+//获取父节点
+    var list_a = document.getElementsByClassName("list_a")[0];
+    console.log(list_a);
+    var list_a_par = list_a.parentNode;
+    console.log(list_a_par);
+
+console.log("............................................................");
+
+//获取兄弟节点
+    var list_b = document.getElementsByClassName("list_b")[0];
+    console.log(list_b);
+
+    var list_b_sib_1 = list_b.previousSibling;    //跟childNodes用法一样
+    var list_b_sib_2 = list_b.previousElementSibling;  //跟children用法一样
+    console.log(list_b_sib_1);
+    console.log(list_b_sib_2);
+
+    //    获取所有兄弟节点
+
+    function siblings(elm) {
+        var a = [];
+        var p = elm.parentNode.children;
+        for(var i =0,pl= p.length;i<pl;i++) {
+            if(p[i] !== elm) a.push(p[i]);
+        }
+        console.log(a);
+        return a;
+    }
+    siblings(list_b);
+
+
+
+
+</script>
+</html>

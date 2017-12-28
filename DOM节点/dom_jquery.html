@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom_jquery</title>
+
+</head>
+<body>
+<div class="list">
+    <ul class="list1">
+        <li class="list_a">第一个li</li>
+        <li class="list_b">第二个li</li>
+        <li class="list_c">第三个li</li>
+        <li class="list_d">第四个li</li>
+        <li class="list_d">第五个li</li>
+    </ul>
+    <ul class="list2">
+        <li>a</li>
+        <li>a</li>
+    </ul>
+</div>
+</body>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+    console.log(".............................获取父节点...........................................");
+//获取父节点  parent  parents closest
+   //closest和parents的主要区别是：
+   // 1，前者从当前元素开始匹配寻找，后者从父元素开始匹配寻找；
+   // 2，前者逐级向上查找，直到发现匹配的元素后 就停止了，后者一直向上查找直到根元素，然后把这些元素放进一个临时集合中，再用给定的选择器表达式去过滤；
+   // 3，前者返回0或1个元素，后者可能包含0 个，1个，或者多个元素。
+
+    //获取直接父元素
+    var a = $(".list_b").parent();  //ul
+    console.log(a);
+    //获取所有父元素
+    var b = $(".list_a").parents();  //ul div body html
+    console.log(b);
+    //从所有父元素中获取某一个class的父元素;取得一个包含着所有匹配元素的祖先元素的元素集合（不包含根元素）
+    var c = $(".list_c").parents(".list");    // ul div
+    console.log(c);
+    //    closest会首先检查当前元素是否匹配，如果匹配则直接返回元素本身。
+    // 如果不匹配则向上查找父元素，一层一层往上，直到找到匹配选择器的元素。如果什么都没找到则返回一个空的jQuery对象
+    var d = $(".list_d").closest(".list");   //ul
+    console.log(d);
+
+console.log("............................获取子节点................................");
+
+//获取子节点  children()  children("")
+    var list = $(".list").children();
+    console.log(list);
+    var list1 = $(".list1").children();
+    console.log(list1);
+    var list11 = $(".list1").children(".list_a");
+    console.log(list11);
+
+console.log(".............................获取兄弟节点...................................");
+
+//获取兄弟节点  prev() prevAll() next() nextAll() siblings() siblings("") find("")
+
+    var list_c = $(".list_c").prev();
+    console.log(list_c);
+    var list_c_all = $(".list_c").prevAll();
+    console.log(list_c_all);
+    var list_sib = $(".list_c").siblings();
+    console.log(list_sib);
+    var list_sib_d = $(".list_c").siblings(".list_d");
+    console.log(list_sib_d);
+
+
+    console.log("........................................筛选................................................");
+
+//筛选
+    // 以下方法都返回一个新的jQuery对象，他们包含筛选到的元素
+    $("ul li").eq(1); // 选取ul li中匹配的索引顺序为1的元素(也就是第2个li元素)
+    $("ul li").first(); // 选取ul li中匹配的第一个元素
+    $("ul li").last(); // 选取ul li中匹配的最后一个元素
+    $("ul li").slice(1, 4); // 选取第2 ~ 4个元素
+    $("ul li").filter(":even"); // 选取ul li中所有奇数顺序的元素
+
+</script>
+</html>
