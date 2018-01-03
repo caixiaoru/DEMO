@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        div{margin:10px;padding:10px;width:100px;height:100px;background-color: #32c896;border:2px solid black;}
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+
+</body>
+<script src="../DOM节点/jquery-3.1.1.min.js"></script>
+<script>
+    $(function(){
+        console.log($("div").width());                   //100
+        console.log($("div").innerWidth());            //120
+        console.log($("div").outerWidth());             //124
+        console.log($("div").outerWidth(true));           //144
+    })
+</script>
+</html>

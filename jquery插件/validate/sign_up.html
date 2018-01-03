@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <style>
+        .error{color:red;}
+    </style>
+</head>
+<body>
+<form class="cmxform" id="commentForm" method="get" action="">
+    <fieldset>
+        <legend>输入您的名字，邮箱，URL，备注。</legend>
+        <p>
+            <label for="cname">用户名 (必需, 最小一个字母)</label>
+            <input id="cname" name="name"  type="text" >
+        </p>
+        <p>
+            <label for="cemail">E-Mail (必需)</label>
+            <input id="cemail" type="email" name="email" >
+        </p>
+        <p>
+            <label for="curl">URL (可选)</label>
+            <input id="curl" type="url" name="url">
+        </p>
+        <p>
+            <label for="ccomment">备注</label>
+            <textarea id="ccomment" name="comment"></textarea>
+        </p>
+        <p>
+            <input class="submit" type="submit" value="Submit">
+        </p>
+    </fieldset>
+</form>
+</body>
+<script src="jquery-3.1.1.min.js"></script>
+<script src="jquery.validate.min.js"></script>
+    <script src="messages_zh.min.js"></script>
+<script>
+    $.validator.setDefaults({
+        submitHandler: function() {
+            alert("提交事件!");
+        }
+    });
+    $().ready(function() {
+        $("#commentForm").validate({
+            rules:{
+                name:{
+                    required:true,
+                    minlength: 2
+
+                },
+                email:{
+                    required:true,
+                    email:true
+                },
+                url:{
+                    required:true,
+                    url:true
+                }
+            },
+            messages:{
+                name:{
+                    required:"用户名不能为空",
+                    minlength:"用户名最少两个字母"
+                },
+                email:{
+                    required:"邮箱不能为空",
+                    email:"邮箱格式不符合要求"
+                },
+                url:{
+                    required:"地址不能为空",
+                    url:"地址格式错误"
+                }
+
+
+            }
+        });
+    });
+</script>
+</html>

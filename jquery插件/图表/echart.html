@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .personal-rank{width:800px;height:500px;}
+    </style>
+</head>
+<body>
+    <div id="personal-rank" class="personal-rank" ></div>
+
+<script src="jquery-3.1.0.min.js"></script>
+<script src="echarts.min.js"></script>
+<script>
+    //echarts实例配置
+    var myChart = echarts.init(document.getElementById('personal-rank'));
+    var option = {
+        title : {
+            text: '人气排行'
+        },
+        tooltip : {
+            trigger: 'axis'
+        },
+        legend: {
+            data:['好评','中评','差评']
+        },
+        toolbox: {
+            show : true,
+            feature : {
+                mark : {show: true,title:'折线图'},
+                magicType : {show: true,title:'柱状图', type: ['line', 'bar', 'stack', 'tiled']},
+                restore : {show: true,title:'刷新'},
+                saveAsImage : {show: true,title :'保存'}
+            }
+        },
+        calculable : true,
+        xAxis : [
+            {
+                type : 'category',
+                data : ['James','Stefan','Tom','Cissy','Abby','David',' Alice']
+            }
+        ],
+        yAxis : [
+            {
+                type : 'value',
+                data:[ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+            }
+        ],
+        series : [
+            {
+                name:'好评',
+                type:'bar',
+                data:[80, 63, 80, 90, 80, 94, 90],
+                markPoint : {
+                    data : [
+                        {type : 'max', name: '最大值'},
+                        {type : 'min', name: '最小值'}
+                    ]
+                },
+                markLine : {
+                    data : [
+                        {type : 'average', name: '平均值'}
+                    ]
+                }
+            },
+            {
+                name:'中评',
+                type:'bar',
+                data:[10, 13, 11, 9, 18, 14, 10],
+                markPoint : {
+                    data : [
+                        {type : 'max', name: '最大值'},
+                        {type : 'min', name: '最小值'}
+                    ]
+                },
+                markLine : {
+                    data : [
+                        {type : 'average', name : '平均值'}
+                    ]
+                }
+            },
+            {
+                name:'差评',
+                type:'bar',
+                data:[2, 5, 9, 6, 2, 7, 7],
+                markPoint : {
+                    data : [
+                        {type : 'max', name: '最大值'},
+                        {type : 'min', name: '最小值'}
+                    ]
+                },
+                markLine : {
+                    data : [
+                        {type : 'average', name : '平均值'}
+                    ]
+                }
+            }
+        ]
+    };
+
+    //使用指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .da-thumbs li {
+            float: left;
+            margin: 5px;
+            background: #fff;
+            padding: 8px;
+            position: relative;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            list-style: none;
+        }
+        .da-thumbs li a,
+        .da-thumbs li a img {
+            display: block;
+            position: relative;
+        }
+        .da-thumbs li a {
+            overflow: hidden;
+        }
+        .da-thumbs li a div {
+            position: absolute;
+            background: rgba(75,75,75,0.7);
+            width: 100%;
+            height: 100%;
+        }
+
+        /*动画部分*/
+        .da-thumbs li a div.da-animate {
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+        /* 动画开始阶段的class */
+        .da-slideFromTop {
+            left: 0px;
+            top: -100%;
+        }
+        .da-slideFromBottom {
+            left: 0px;
+            top: 100%;
+        }
+        .da-slideFromLeft {
+            top: 0px;
+            left: -100%;
+        }
+        .da-slideFromRight {
+            top: 0px;
+            left: 100%;
+        }
+
+        /* 动画结果阶段的class: */
+        .da-slideTop {
+            top: 0px;
+        }
+        .da-slideLeft {
+            left: 0px;
+        }
+
+        /*点击图片后图片放大*/
+        /*img{transition:all 1s;}*/
+        /*img:hover{ transform: scale(1.1);}*/
+    </style>
+
+</head>
+<body>
+<ul id="da-thumbs" class="da-thumbs">
+    <li>
+        <a href="">
+            <img src="img/c.jpg" />
+            <div><span>caixiaoru</span></div>
+        </a>
+    </li>
+
+
+</ul>
+
+
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script>
+//    $(function() {
+//
+//        $("#da-thumbs > li").hoverdir();
+//
+//    });
+
+    $("ul li").hoverdir( {
+
+        hoverDelay : 50,
+
+        reverse : true
+
+    });
+
+</script>
+</body>
+</html>
